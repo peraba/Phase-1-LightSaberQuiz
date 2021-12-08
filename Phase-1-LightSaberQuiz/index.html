@@ -9,7 +9,7 @@
     <style>h1{text-align: center;}</style>
     <br>
     <style>h2{text-align: center;}</style>
-    <link href="index.js">
+    <script src="quiz.js"></script>
 </head>
     <body background="/Phase-1-LightSaberQuiz/Phase-1-LightSaberQuiz/assets/star-wars-backgrounds-12-1.jpg">
         
@@ -23,20 +23,15 @@
     width="180"
     height="500">
 
-       <h2>Questions</h2>
-       <img src="https://via.placeholder.com/150x130"
-       alt="Question Answers"
-       class= "center">
-       <div>
-        <ol>
-            <li>
-                this is an example?
-            </li>
-        </ol>
-    <div id="buttons">
-        <button id="yesBtn">Yes</button>
-        <button id="maybeBtn">Maybe</button>
-        <button id="noBtn">No</button>
+    <div id="quiz">
+        <h2>Questions</h2>
+        <img id="gif" src="assets/quizGifs/1241.gif" alt="Question Answers">
+        <h5 id="question">This is an example</h5>
+        <div id="buttons" >
+            <button className="btn" id="yesBtn">Yes</button>
+            <button className="btn" id="maybeBtn">Maybe</button>
+            <button className="btn" id="noBtn">No</button>
+        </div>
     </div>
    
     <br>

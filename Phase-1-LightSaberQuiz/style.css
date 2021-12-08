@@ -10,12 +10,25 @@ h1 {
     width: 35%;
   }
   
-  div { 
-      text-align: center; 
-    }
+#quiz{ 
+    text-align: center; 
+}
 
-    ol { 
-    display: inline-block; text-align: left; 
+button{
+    width:10%;
+    color:rebeccapurple
+}
+#gif{
+    width: 250px;
+    height: 150px;
+    position: relative;
+    border: 2px solid black;
+}
+#question{
+    margin-left: 32%;
+    /* margin-right: 65%; */
+    width: 20%;
+    
 }
 
 #comment button {
@@ -67,18 +80,4 @@ button.primaryContained:hover {
 	background: #ff0000;
 }
 
-#noBtn {
-    width:10%;
-    color:red
-}
-
-#yesBtn {
-    width:10%;
-    color:red
-}
-
-#maybeBtn {
-    width:10%;
-    color:red
-}
 
