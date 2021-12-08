@@ -11,16 +11,20 @@
     <style>h2{text-align: center;}</style>
     <link href="index.js">
 </head>
-    <body style = "background: url(https://images.app.goo.gl/GDTjHwwGSGJRqQRU9); background-size: 75% 100%;">
+    <body background="/Phase-1-LightSaberQuiz/Phase-1-LightSaberQuiz/assets/star-wars-backgrounds-12-1.jpg">
         
     <h1><b>Answer odd questions to find out your lightsaber color</b></h1>
     <br>
     <br>
     <br>
-    <img src="https://via.placeholder.com/200x500" alt="Ads" align="right">
+    <img src="assets/d6pw2o7-cd83d14b-e077-4fa9-81a9-6543fa436653.jpg" 
+    alt="Ads" 
+    align="right"
+    width="180"
+    height="500">
 
        <h2>Questions</h2>
-       <img src="https://via.placeholder.com/200x150"
+       <img src="https://via.placeholder.com/150x130"
        alt="Question Answers"
        class= "center">
        <div>
@@ -34,12 +38,27 @@
         <button id="maybeBtn">Maybe</button>
         <button id="noBtn">No</button>
     </div>
-    <button>submit</button><!--this button to submit answers ?-->
+   
     <br>
 
         </div>
         
-
-
+        <section id="app">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <div class="comment">
+                <p v-for="items in item" v-text="items"></p>
+                  </div>
+                  </div>
+                  </div>
+              <div class="row">
+                <div class="col-6">
+              <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                  <button id="comment button" v-on:click="addItem()" class='primaryContained float-right' type="submit">submit</button>
+                </div>
+              </div>
+            </div>
+          </section>
     </body>
 </html>
