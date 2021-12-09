@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +12,31 @@
     <style>h1{text-align: center;}</style>
     <br>
     <style>h2{text-align: center;}</style>
-    <link href="index.js">
+    <script src="quiz.js"></script>
+    <style>
+      button {
+          border-radius: 5px;
+          color: white;
+          background-color: black;
+          padding: 5px 15px 8px 15px;
+      }
+     
+      
+      button:hover {
+          animation-name: background-color;
+          animation-duration: 800ms;
+      }
+     
+      
+       @keyframes background-color {
+          100% {
+              background-color: red;
+          }
+      }
+  </style>
+  
 </head>
-    <body background="/Phase-1-LightSaberQuiz/Phase-1-LightSaberQuiz/assets/star-wars-backgrounds-12-1.jpg">
+    <body background="assets/star-wars-backgrounds-12-1.jpg">
         
     <h1><b>Answer odd questions to find out your lightsaber color</b></h1>
     <br>
@@ -20,23 +45,16 @@
     <img src="assets/d6pw2o7-cd83d14b-e077-4fa9-81a9-6543fa436653.jpg" 
     alt="Ads" 
     align="right"
-    width="180"
-    height="500">
+    width="230"
+    height="600">
 
-       <h2>Questions</h2>
-       <img src="https://via.placeholder.com/150x130"
-       alt="Question Answers"
-       class= "center">
-       <div>
-        <ol>
-            <li>
-                this is an example?
-            </li>
-        </ol>
-    <div id="buttons">
-        <button id="yesBtn">Yes</button>
-        <button id="maybeBtn">Maybe</button>
-        <button id="noBtn">No</button>
+    <div id="quiz">
+        <h2>Questions</h2>
+        <img id="gif" src="assets/Main.gif" alt="Question Answers">
+        <h4 id="question">Click the start button to find your lightsaber color!</h4>
+        <div id="buttons" >
+            <button>Start</button>
+        </div>
     </div>
    
     <br>
@@ -52,7 +70,7 @@
                   </div>
                   </div>
                   </div>
-              <div class="row">
+              <div class="row";>
                 <div class="col-6">
               <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
                   <button id="comment button" v-on:click="addItem()" class='primaryContained float-right' type="submit">submit</button>
