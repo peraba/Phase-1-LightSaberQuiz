@@ -13,8 +13,9 @@
     <br>
     <style>h2{text-align: center;}</style>
     <script src="quiz.js"></script>
+    <!-- <script src="jquery.js" charset="utf-8"></script> -->
     <style>
-      button {
+      .button {
           border-radius: 5px;
           color: white;
           background-color: black;
@@ -22,7 +23,7 @@
       }
      
       
-      button:hover {
+      .button:hover {
           animation-name: background-color;
           animation-duration: 800ms;
       }
@@ -37,12 +38,30 @@
   
 </head>
     <body background="assets/star-wars-backgrounds-12-1.jpg">
-        
+
+
     <h1><b>Answer odd questions to find out your lightsaber color</b></h1>
+
+      <div class="dropdown">
+        <button class="button">Info on Colors</button>
+        <div class="dropdown-content">
+          <li>Green</li>
+          <li>Blue</li>
+          <li>Purple</li>
+          <li>Red</li>
+          <li>Random Character</li>
+        </div>
+      </div>
+      <div id="content">
+        <h4 id="content-h4">Choose above for some facts!</h4>
+      </div>
+      <img id="nav-image" src="assets/star-wars-backgrounds-14.jpg">
+      
+      
     <br>
     <br>
     <br>
-    <img src="assets/d6pw2o7-cd83d14b-e077-4fa9-81a9-6543fa436653.jpg" 
+    <img id="ad" src="assets/d6pw2o7-cd83d14b-e077-4fa9-81a9-6543fa436653.jpg" 
     alt="Ads" 
     align="right"
     width="230"
@@ -53,30 +72,43 @@
         <img id="gif" src="assets/Main.gif" alt="Question Answers">
         <h4 id="question">Click the start button to find your lightsaber color!</h4>
         <div id="buttons" >
-            <button>Start</button>
+            <button class="button">Start</button>
         </div>
     </div>
    
     <br>
 
+
         </div>
+      </div>
+      <style media="screen">
+    *{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    border: none;
+    outline:none;
+    letter-spacing: 2px;
+  }
+  #new{
+  height:50px;
+  width:240px;
+background:white ;
+box-shadow: 0 5px 10px #111;
+border-radius:8px ;
+padding:11px ;
+color: black;
+}
+      </style>
+      <form id="comment" action="" method="POST">
         
-        <section id="app">
-            <div class="container">
-              <div class="row">
-                <div class="col-6">
-                  <div class="comment">
-                <p v-for="items in item" v-text="items"></p>
-                  </div>
-                  </div>
-                  </div>
-              <div class="row";>
-                <div class="col-6">
-              <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
-                  <button id="comment button" v-on:click="addItem()" class='primaryContained float-right' type="submit">submit</button>
-                </div>
-              </div>
-            </div>
-          </section>
+        <label for="new-comment"></label>
+       <br>
+        <input type="text" id="new" name="new-comment" placeholder="add comment">
+        
+        <input class="button" type="submit" value="Submit">
+      </form>
+      <div id="comment-section">
+      </div>
     </body>
 </html>

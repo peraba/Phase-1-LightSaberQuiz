@@ -1,3 +1,45 @@
+.dropdown {
+	display: inline-block;
+	position: relative;
+  }
+.dropdown-content {
+	display: none;
+	position: absolute;
+	width: 100%;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.dropdown-content li {
+	display: block;
+	background-color: black;
+	color: white;
+	padding: 5px;
+	text-decoration: none;
+}
+.dropdown-content li:hover {
+	color: #FFFFFF;
+	background-color: red;
+}
+#content{
+	border-radius: 5px 5px 5px 5px;
+	border: black solid;
+	background-color: #E8E8E8;
+	font-family: sans ; color: red;
+    width: 20%;
+}
+#content h4{
+	text-align: center;
+}
+#nav-image{
+	border-radius: 5px 5px 5px 5px;
+	border: black solid;
+	height: 200px;
+	width: 20%;
+}
+
 h1 {
     color: yellow;
 	font-size: 37px;
@@ -17,8 +59,10 @@ h1 {
                0 20px 20px rgba(0,0,0,.15);
 }
 h2 {
+	margin-top: -100px;
+	margin-left: 60px;
 	color: yellow;
-	font-size: 25px;
+	font-size: 29px;
 	-webkit-text-stroke: .8px black;
 	/* font-family: serif; */
 	text-shadow: 0 1px 0 black,
@@ -64,7 +108,7 @@ h2 {
     height: 300px;
     /* position: relative; */
 	margin-left: 300px;
-	margin-top: 100px;
+	margin-bottom: 100px;
     border: 2px solid black;
 }
 #question{
@@ -73,60 +117,25 @@ h2 {
 	background-color: #E8E8E8;
 	font-family: sans ; color: red;
     margin-left: 773px;
-	margin-top: 30px;
+	margin-top: -60px;
     /* margin-right: 10px; */
-    width: 21.5%;
-    
+    width: 21.5%;   
 }
-
-#comment button {
-    width:15%;
-    
-}
-.container {
-	max-width: 400px;
-	margin: 30px auto;
-	border-radius: 8px;
-	padding: 20px;
-}
-.comment {
-	display: block;
-	transition: all 1s;
-}
-.commentClicked {
-	min-height: 0px;
-	border: 1px solid #eee;
-	border-radius: 20px;
-	padding: 5px 10px
-}
-.container textarea {
-	width: 50%;
-	border: none;
-	background: #E8E8E8;
-	padding: 5px 10px;
-	height: 40%;
-	border-radius: 5px 5px 0px 0px;
-	border-bottom: 2px solid #ff0000;
-	transition: 0.5s;
-	margin-top: 180px;
-}
-button.primaryContained {
-	background: black;
-	color: #fff;
-	padding: 10px 10px;
-	border: none;
-	margin-top: 0px;
-	cursor: pointer;
-	text-transform: uppercase;
-	letter-spacing: 4px;
-	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
-	transition: .5s all;
-	font-size: 10px;
-	border-radius: 5px;
-
-}
-button.primaryContained:hover {
-	background: #ff0000;
+#ad{
+	margin-top: -10%;
 }
 
 
+#comment-section p{
+	padding: 5px;
+	text-align: center;
+	border-radius: 6px 6px 6px 6px;
+	border: black solid;
+	background-color: #E8E8E8;
+	font-family: sans ; color: red;
+    width: max-content;
+	
+}
+::placeholder{
+	color: black;
+}

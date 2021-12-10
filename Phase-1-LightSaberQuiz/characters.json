@@ -1,92 +1,47 @@
 [
     {
-        "id":1,
-        "question":"1. Would you ignore the pineapple pizza if a regularly cheese pizza was going to be delivered in 2 hours?",
-        "gif": "assets/quizGifs/may4_18_800.gif",
         "image" : "https://images2.minutemediacdn.com/image/fetch/w_736,h_485,c_fill,g_auto,f_auto/https%3A%2F%2Fdorksideoftheforce.com%2Ffiles%2F2020%2F11%2Fa-new-hope-850x500.jpg"
     },
     {
-        "id":2,
-        "question":"2. If you have a nose, does it itch?",
-        "gif":"assets/quizGifs/83781.gif",
         "image" : "https://lumiere-a.akamaihd.net/v1/images/6023eab8d941ed00018d113f-image_6f532508.jpeg?region=0%2C48%2C1536%2C768&width=960"
     },
     {
-        "id":3,
-        "question":"3.Would you be silent if you stubbed your toe?",
-        "gif":"assets/quizGifs/1241.gif",
         "image" : "https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/07/1487160686-r2-d2.jpg?crop=1.00xw:0.816xh;0,0.0372xh&resize=1200:*"
     },
     {
-        "id":4,
-        "question":"4.Is this quiz cool?",
-        "gif":"assets/quizGifs/giphy.gif",
         "image" : "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B0BDA09845AA575291C38D21E462571A6E07AC34899505FA6F6D615137B15EDF/scale?width=1200&aspectRatio=1.78&format=jpeg"
     },
     {
-        "id":5,
-        "question":"5.Was your last answer No?",
-        "gif":"assets/quizGifs/200 (1).gif",
         "image" : "https://wallpaperaccess.com/full/4344156.jpg"
     },
     {
-        "id":6,
-        "question":"6.Is a tomato a fruit?",
-        "gif":"assets/quizGifs/2193.gif",
         "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnH6UmjrBQuY58y-QJ6Xs2cscIH3GrriHvaw&usqp=CAU"
     },
     {
-        "id":7,
-        "question":"7. Is Yes stronger then No?",
-        "gif":"assets/quizGifs/xqJn6R.gif",
         "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8cuWRwhtUOe1UdrpIaUPLWf5jsKe_tmDydw&usqp=CAU"
     },
     {
-        "id":8,
-        "question":"8. Would you drive a car rather then a spaceship, if you had no knowledge of driving a spaceships?",
-        "gif":"assets/quizGifs/200.gif",
         "image" : "https://lumiere-a.akamaihd.net/v1/images/r5-d4_main_image_7d5f078e.jpeg?region=374%2C0%2C1186%2C666&width=960"
     },
     {
-        "id":9,
-        "question":"9. Do bald eagles get dandruff?",
-        "gif":"assets/quizGifs/sesame-street-star-wars.gif",
         "image" : "https://i.insider.com/555219ca6bb3f7a502baac2c?width=700"
     },
     {
-        "id":10,
-        "question":"10.If a relative started posting minion memes on social media would you try to stop them?",
-        "gif":"assets/quizGifs/BZ8DQDX.gif",
         "image" : "https://s3-us-west-2.amazonaws.com/prd-rteditorial/wp-content/uploads/2021/03/29140601/STAR-WARS_-EPISODE-IV-A-NEW-HOPE-Alec-Guinness-700x380.jpg"
     },
     {
-        "id":11,
-        "question":"11. If someone said \"This statement is false\" would it be true?",
-        "gif":"assets/quizGifs/tumblr_27a07056a878d7df2d36ae32091480db_edde7faa_540.gif",
         "image" : "https://lumiere-a.akamaihd.net/v1/images/Anakin-Skywalker_d3330724.jpeg?region=0%2C0%2C1200%2C675&width=960"
     },
     {
-        "id":12,
-        "question":"12. Would you help Robin Hood?",
-        "gif":"assets/quizGifs/darth-vader-star-wars.gif",
         "image" : "https://upload.wikimedia.org/wikipedia/en/5/5a/Grand_Moff_Tarkin.png"
     },
     {
-        "id":13,
-        "question":"13. Did Heath Ledger play the best live action Joker?",
-        "gif":"assets/quizGifs/YXnw.gif",
         "image" : "https://lumiere-a.akamaihd.net/v1/images/5e94826f7d7499000120d564-image_f9b9d30e.jpeg?region=0%2C48%2C1536%2C768&width=960"
     },
     {
-        "id":14,
-        "question":"14. If you saw someone drop money unknowingly would you return it?",
-        "gif":"assets/quizGifs/hello-there-general-kenobi.gif",
         "image" : "https://lumiere-a.akamaihd.net/v1/images/han-solo-main_a4c8ff79.jpeg?region=0%2C0%2C1920%2C960"
     },
     {
-        "id":15,
-        "question":"15. Are you introverted?",
-        "gif":"assets/quizGifs/d3ab43c8fda8c5303b31ef1690b2f17d.gif",
         "image" : "https://pyxis.nymag.com/v1/imgs/c20/4ac/55db7c77cf4a0ed214af58f3201f5281bf-12-greedo-star-wars.rsocial.w1200.jpg"
     }
 ]
