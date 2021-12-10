@@ -36,7 +36,7 @@
     },
     {
         "id":8,
-        "question":"8. Would you drive a car over a spaceship, if you had no knowledge of spaceships?",
+        "question":"8. Would you drive a car rather then a spaceship, if you had no knowledge of driving a spaceships?",
         "gif":"assets/quizGifs/200.gif"
     },
     {
@@ -51,7 +51,7 @@
     },
     {
         "id":11,
-        "question":"11. If someone said \\\"This statement is false\\\" would it be true?",
+        "question":"11. If someone said \"This statement is false\" would it be true?",
         "gif":"assets/quizGifs/tumblr_27a07056a878d7df2d36ae32091480db_edde7faa_540.gif"
     },
     {

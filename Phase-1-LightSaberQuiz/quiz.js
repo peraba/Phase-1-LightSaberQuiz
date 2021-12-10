@@ -1,6 +1,9 @@
+//Global Variables\\
 let counter = 0;
 let scoringButtons = 0;
+//DOMContentLoaded
 document.addEventListener("DOMContentLoaded", () => {
+    //Quiz\\
     const gif = document.querySelector("#gif");
     const button = document.querySelector("#buttons");
     const question = document.querySelector("#question");
@@ -8,7 +11,51 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("db.json")
     .then(resp => resp.json())
     .then(data => buttonsFunction(button, data))
+    
+    //API Navbar\\
+    const dropDown = document.querySelector(".dropdown-content");
+    const textInfo = document.querySelector("#content-h4");
+    const navImage = document.querySelector("#nav-image");
+
+    console.log(textInfo.innerHTML)
+
+    dropDown.addEventListener("click", (e) => {
+        switch (e.target.innerHTML) {
+            case "Green":
+                textInfo.innerHTML = "Luke Skywalker had a green lightsaber";
+                navImage.src = "assets/colors/greenSabergif.gif";
+                break;
+            case "Blue":
+                textInfo.innerHTML = "The great Obi-Wan Kenobi had a blue ligthsaber"
+                navImage.src = "assets/colors/blueSaber.gif"
+                break;
+            case "Purple":
+                textInfo.innerHTML = "Mace Wendu had a purple lightsaber";
+                navImage.src = "assets/colors/purpleSaber.gif";
+                break;
+            case "Red":
+                textInfo.innerHTML = "Darth Vader had a red lightsaber";
+                navImage.src = "assets/colors/redSaber.gif";
+                break;
+            case "Random Fact":
+                apiFunction(`https://swapi.dev/api/people/${randomNumber(83)}`, textInfo);
+                navImage.src = "";
+                break;
+        }
+    })
+    // apiFunction(`https://swapi.dev/api/people/${randomNumber(83)}`);
+
 })
+function apiFunction(url, textInfo){
+    fetch(url)
+    .then(resp => resp.json())
+    .then(data => textInfo.innerHTML = data.name);
+    
+}
+function randomNumber(upToNumber){
+    return Math.floor(Math.random() * upToNumber + 1);
+}
+//Quiz Worker\\
 function buttonsFunction(button, data){
     button.addEventListener("click", (e) =>{
         counter >= 15 ? endQuiz(e, data) : switchFunction(e, data);
@@ -39,7 +86,6 @@ function buttonsFunction(button, data){
         }
     }
     function iterateThroughMemesAndGifs(e, data){
-        
         console.log(counter)
         question.innerHTML = data[counter].question
         gif.src = data[counter].gif
@@ -90,29 +136,3 @@ function addButtons(button) {
     button.appendChild(no);
 }
 
-//Comment section
-$(document).ready(function(){ 
- 
-    $(".primaryContained").on('click', function(){
-    $(".comment").addClass("commentClicked");
-  });//end click
-  $("textarea").on('keyup.enter', function(){
-    $(".comment").addClass("commentClicked");
-  });//end keyup
-  });//End Function
- 
-new Vue({
-    el: "#app",
-    data:{
-       title: 'Add a comment',
-      newItem: '',
-      item: [],
-    },
-    methods:{
-      addItem  (){
-      this.item.push(this.newItem);
-        this.newItem = "";
-      }
-  }
- 
-  });
