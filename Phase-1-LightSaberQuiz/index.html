@@ -15,7 +15,7 @@
     <script src="quiz.js"></script>
     <!-- <script src="jquery.js" charset="utf-8"></script> -->
     <style>
-      .button {
+      button {
           border-radius: 5px;
           color: white;
           background-color: black;
@@ -23,7 +23,7 @@
       }
      
       
-      .button:hover {
+      button:hover {
           animation-name: background-color;
           animation-duration: 800ms;
       }
@@ -71,7 +71,7 @@
         <h2>Questions</h2>
         <img id="gif" src="assets/Main.gif" alt="Question Answers">
         <h4 id="question">Click the start button to find your lightsaber color!</h4>
-        <div id="buttons" >
+        <div id="buttons">
             <button class="button">Start</button>
         </div>
     </div>
@@ -106,7 +106,7 @@ color: black;
        <br>
         <input type="text" id="new" name="new-comment" placeholder="add comment">
         
-        <input class="button" type="submit" value="Submit">
+        <input id="submit" type="submit" value="Submit">
       </form>
       <div id="comment-section">
       </div>

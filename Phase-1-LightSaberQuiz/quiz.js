@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 navImage.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUEi4PAjNvScSzHOFTUsWLB7UIfCFwKntPCw&usqp=CAU";
                 break;
             case "Random Character":
-                apiFunction(`https://swapi.dev/api/people/${randomNumber(30)}`, textInfo);
+                apiFunction(`https://swapi.dev/api/people/${randomNumber(82)}`, textInfo);
                 navImage.src = "";
                 fetch("characters.json")
                 .then(resp => resp.json())

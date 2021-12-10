@@ -97,7 +97,7 @@ h2 {
 } */
 
 
-   #buttons{
+#buttons{
     margin-left:300px;
 	
 
@@ -139,3 +139,23 @@ h2 {
 ::placeholder{
 	color: black;
 }
+
+#submit {
+	border-radius: 5px;
+	color: white;
+	background-color: black;
+	padding: 5px 15px 8px 15px;
+}
+
+
+#submit:hover {
+	animation-name: background-color;
+	animation-duration: 800ms;
+}
+
+
+/* @keyframes background-color {
+	100% {
+		background-color: red;
+	}
+} */
